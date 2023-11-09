@@ -1,5 +1,7 @@
 import { Pool } from "pg";
 
+console.debug("Secrets Manager DB password 확인: ", process.env.DB_PASSWORD);
+
 export const pool = new Pool({
   host: process.env.DB_HOST,
   port: Number(process.env.DB_PORT),
